@@ -4,7 +4,7 @@ Scan shodan for open Buffalo NAS devices and identify **accessible folder struct
 #Features  
   Scans for **open Buffalo NAS devices** via Shodan
   Extracts **folder structures** from each NAS device 
-  **Filters out** empty NAS or those with only the `.webaxs` folder.  
+  **Filters out** empty NAS devices
   Saves results to:  
    - `hits.txt` → NAS devices with useful folders  
    - `no_hits.txt` → NAS devices with no useful content  
