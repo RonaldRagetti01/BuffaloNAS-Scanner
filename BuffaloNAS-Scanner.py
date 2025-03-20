@@ -24,7 +24,7 @@ def get_nas_folders(ip, port):
         return None  # Return None if request fails
 
 def generate_html(hits):
-    """Generate an HTML file with clickable links for hits."""
+    """Generate an HTML file with a clean list layout and clickable IP:PORT."""
     html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +35,8 @@ def generate_html(hits):
         body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
         h2 { color: #333; }
         .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .nas-link { margin: 10px 0; padding: 10px; border-bottom: 1px solid #ddd; }
+        .nas-entry { margin-bottom: 20px; padding: 15px; border-bottom: 1px solid #ddd; }
+        ul { margin: 5px 0; padding-left: 20px; }
         a { text-decoration: none; color: #007bff; font-weight: bold; }
         a:hover { text-decoration: underline; }
     </style>
@@ -43,12 +44,22 @@ def generate_html(hits):
 <body>
     <div class="container">
         <h2>Buffalo NAS Hits</h2>
-        <p>Click a link below to access a Buffalo NAS device:</p>
+        <p>Detected Buffalo NAS devices with accessible folders:</p>
 """
 
     for entry in hits:
-        ip_port, folders = entry.split(" - ", 1)
-        html_content += f'<div class="nas-link"><a href="http://{ip_port}/ui#/" target="_blank">{ip_port}</a> - Folders: {folders}</div>\n'
+        ip_port, folder_data = entry.split(" - ", 1)
+        folders = eval(folder_data)  # Convert string representation of list to actual list
+
+        html_content += f'<div class="nas-entry">'
+        html_content += f'<strong> <a href="http://{ip_port}/ui#/" target="_blank">{ip_port}</a></strong><br>'
+        html_content += "<strong> Folders:</strong><ul>"
+
+        for folder in folders:
+            if folder != ".webaxs":  # Exclude .webaxs from list
+                html_content += f'<li>{folder}</li>'
+
+        html_content += "</ul></div>\n"
 
     html_content += """
     </div>
