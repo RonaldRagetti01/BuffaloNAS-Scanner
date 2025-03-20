@@ -13,8 +13,8 @@ Scan shodan for open Buffalo NAS devices and identify accessible folders
 
 #Requirements  
   Before running the script, ensure you have:
-    - Python 3 installed
-    - Requirements.txt installed
-    - A Shodan account with an API key  
-      - Shodan CLI initialized using:  
+   - Python 3 installed
+   - Requirements.txt installed
+   - A Shodan account with an API key  
+    - Shodan CLI initialized using:  
           shodan init YOUR_API_KEY
