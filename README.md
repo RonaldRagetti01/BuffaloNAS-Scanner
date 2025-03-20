@@ -48,8 +48,18 @@ To change the Shodan search limit (set to **10** by default), modify the followi
 
 If you find this tool useful and would like to support me, consider donating:  
 
-- **PayPal**: [https://www.paypal.me/RonaldsServices]  
+- **PayPal**: [https://www.paypal.me/RonaldsServices]
 - **Bitcoin (BTC)**: bc1qpdnu3mcl96g8puru982ndq3kyft7f9srjnx3mt  
 
 Your support is greatly appreciated!
+
+
+
+## Examples
+
+![image](https://github.com/user-attachments/assets/893a7502-8f84-4f90-9ec7-c69124cc9ebd)
+
+![image](https://github.com/user-attachments/assets/2ca0f884-5a30-4a50-982b-c61b38e5feb2)
+
+
 
