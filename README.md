@@ -22,10 +22,10 @@ Scan shodan for open Buffalo NAS devices and identify accessible folders
 
 **Usage**
 
-git clone https://github.com/YOUR-USERNAME/BuffaloNAS-Scanner.git
-cd BuffaloNAS-Scanner
-python BuffaloNAS-Scanner.py
+- git clone https://github.com/YOUR-USERNAME/BuffaloNAS-Scanner.git
+- cd BuffaloNAS-Scanner
+- python BuffaloNAS-Scanner.py
 
-change the code to limit shodan search
+- change the code to limit shodan search
   (set to 10 by default)
     ["shodan", "search", "--fields", "ip_str,port", "--limit", "10", query]
