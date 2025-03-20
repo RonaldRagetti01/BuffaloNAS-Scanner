@@ -1,5 +1,5 @@
 # BuffaloNAS-Scanner
-Scan shodan for open Buffalo NAS devices and identify **accessible folder structures**
+Scan shodan for open Buffalo NAS devices and identify **accessible folders**
 
 #Features  
   Scans for **open Buffalo NAS devices** via Shodan
