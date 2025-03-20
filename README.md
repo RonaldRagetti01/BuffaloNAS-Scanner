@@ -38,3 +38,6 @@ To change the Shodan search limit (set to **10** by default), modify the followi
 ```python
 ["shodan", "search", "--fields", "ip_str,port", "--limit", "10", query]
 ```
+## Disclaimer  
+
+**This tool is for research purposes only.** Unauthorized access to systems without permission may be illegal. **Use responsibly.**  
