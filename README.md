@@ -34,7 +34,7 @@ cd BuffaloNAS-Scanner
 python BuffaloNAS-Scanner.py
 ```
 
-To change the Shodan search limit (set to **10** by default), modify the following line in `script.py`:  
+To change the Shodan search limit (set to **10** by default), modify the following line in `BuffaloNAS-Scanner.py`:  
 ```python
 ["shodan", "search", "--fields", "ip_str,port", "--limit", "10", query]
 ```
