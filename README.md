@@ -22,7 +22,7 @@ Scan shodan for open Buffalo NAS devices and identify accessible folders
 
 **Usage**
 
-- git clone https://github.com/YOUR-USERNAME/BuffaloNAS-Scanner.git
+- git clone [https://github.com/RonaldRagetti01/BuffaloNAS-Scanner]
 - cd BuffaloNAS-Scanner
 - python BuffaloNAS-Scanner.py
 
