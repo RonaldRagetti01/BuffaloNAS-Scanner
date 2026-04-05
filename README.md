@@ -49,7 +49,7 @@ To change the Shodan search limit (set to **10** by default), modify the followi
 If you find this tool useful and would like to support me, consider donating:  
 
 - **PayPal**: [https://www.paypal.me/RonaldsServices]
-- **Bitcoin (BTC)**: bc1qpdnu3mcl96g8puru982ndq3kyft7f9srjnx3mt  
+- **Bitcoin (BTC)**: bc1q3pf7pvcndxqrsrgynxd020r0scuuqukfdc0fta  
 
 Your support is greatly appreciated!
 
